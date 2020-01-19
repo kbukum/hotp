@@ -13,9 +13,9 @@ import (
 func main() {
 	totp := hotp.TOTP{
 		OTP: hotp.OTP{
-			SharedSecret: "KAMILBUKUM@GMAIL.COMHENNGECHALLENGE003",
-			Digits:       10,
-			Crypto:hotp.SHA512,
+			SharedSecret: "Secret Key",
+			Digits:       8,
+			Crypto:hotp.SHA1,
 		},
 		StartTime: 0,
 		TimeStep:  30,
